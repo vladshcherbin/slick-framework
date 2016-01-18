@@ -1,0 +1,35 @@
+{
+  "name": "slick-framework",
+  "version": "0.0.1",
+  "description": "Yeah, I know. Yet another CSS framework",
+  "main": "dist/framework.min.css",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-size": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://VladShcherbin@github.com/VladShcherbin/slick-framework.git"
+  },
+  "keywords": [
+    "slick",
+    "minimal",
+    "css",
+    "framework",
+    "grid"
+  ],
+  "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VladShcherbin/slick-framework/issues"
+  },
+  "homepage": "https://github.com/VladShcherbin/slick-framework#readme"
+}
