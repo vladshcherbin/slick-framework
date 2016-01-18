@@ -1,0 +1,82 @@
+@import "../variables";
+@import "mixins";
+
+.container {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+.container-fluid {
+  @include container-fixed;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: ($grid-gutter-width / -2);
+  margin-right: ($grid-gutter-width / -2);
+  box-sizing: border-box;
+
+  @include alignment('xs');
+  @include direction('xs');
+
+  @media (min-width: $screen-sm-min) {
+    @include alignment('sm');
+    @include direction('sm');
+  }
+  @media (min-width: $screen-md-min) {
+    @include alignment('md');
+    @include direction('md');
+  }
+  @media (min-width: $screen-lg-min) {
+    @include alignment('lg');
+    @include direction('lg');
+  }
+}
+
+@include make-grid();
+
+@include loop-columns('xs');
+@include hidden('xs-up');
+
+@media (min-width: $screen-sm-min) {
+  @include loop-columns('sm');
+  @include hidden('sm-up');
+}
+
+@media (min-width: $screen-md-min) {
+  @include loop-columns('md');
+  @include hidden('md-up');
+}
+
+@media (min-width: $screen-lg-min) {
+  @include loop-columns('lg');
+}
+
+@media (max-width: $screen-xs-max) {
+  @include hidden('xs');
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @include hidden('sm');
+  @include visible('sm');
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  @include hidden('md');
+  @include visible('md');
+}
+
+@media (min-width: $screen-lg-min) {
+  @include hidden('lg');
+  @include visible('lg');
+}
