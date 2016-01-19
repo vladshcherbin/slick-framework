@@ -1,4 +1,4 @@
-// Create container block
+// Create Container Block
 @mixin container-fixed($gutter: $grid-gutter-width) {
   margin-left: auto;
   margin-right: auto;
@@ -6,7 +6,7 @@
   padding-right: ($gutter / 2);
 }
 
-// Align items in rows
+// Align Items in Rows
 @mixin alignment($class) {
   // Horizontal
   @if ($class != xs) {
@@ -47,7 +47,7 @@
   }
 }
 
-// Change the items direction
+// Change the Items Direction
 @mixin direction($class) {
   @if ($class != xs) {
     &.normal-#{$class} {
@@ -65,7 +65,7 @@
   }
 }
 
-// Set default flex properties
+// Set Default Flex Properties
 @mixin make-grid() {
   $list: '.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1';
 
@@ -81,7 +81,7 @@
   }
 }
 
-// Set columns width and offset
+// Set Columns Width and Offset
 @mixin calc-column($index, $class, $type) {
   @if (($type == width) and ($index > 0)) {
     .col-#{$class}-#{$index} {
@@ -97,7 +97,7 @@
   }
 }
 
-// Loop through columns and set their properties
+// Loop Through Columns and Set Their Properties
 @mixin loop-columns($class) {
   @for $i from 0 through $grid-columns {
     @include calc-column($i, $class, width);
@@ -112,14 +112,14 @@
   }
 }
 
-// Generate hidden class
+// Generate Hidden Class
 @mixin hidden($class) {
   &.hidden-#{$class} {
     display: none;
   }
 }
 
-// Generate visible class
+// Generate Visible Class
 @mixin visible($class) {
   &.visible-#{$class}-block {
     display: block !important;

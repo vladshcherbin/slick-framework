@@ -12,3 +12,15 @@ $grid-gutter-width: 30px !default;
 $container-sm: (720px + $grid-gutter-width) !default;
 $container-md: (940px + $grid-gutter-width) !default;
 $container-lg: (1140px + $grid-gutter-width) !default;
+
+// Fonts
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-size-base: 1.5 !default;
+$line-height-base: 2.2 !default;
+$font-size-h1: 3 !default;
+$font-size-h2: 2.7 !default;
+$font-size-h3: 2.4 !default;
+$font-size-h4: 2.1 !default;
+$font-size-h5: 1.8 !default;
+$font-size-h6: 1.5 !default;

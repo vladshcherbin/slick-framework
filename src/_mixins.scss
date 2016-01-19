@@ -1,0 +1,18 @@
+@import "variables";
+
+// Generate Font and Line Height
+@mixin font-size($value) {
+  $line-height: $line-height-base / $value;
+
+  @if ($line-height < 1) {
+    $line-height: $line-height-base * (ceil($line-height) + 1) / $value;
+  }
+
+  font-size: $value + rem;
+  line-height: $line-height;
+}
+
+// Convert rem to pixels
+@function rem-to-px($value) {
+  @return $value * 10 + px;
+}

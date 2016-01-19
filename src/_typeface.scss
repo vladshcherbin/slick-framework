@@ -1,0 +1,47 @@
+@import "variables";
+@import "mixins";
+
+body {
+  font-family: 'PT Sans', 'Lucida Grande', 'Helvetica Neue', Arial, sans-serif;
+  font-size: $font-size-base + rem;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base / $font-size-base;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+strong,
+b {
+  font-weight: $font-weight-bold;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+p {
+  margin-top: 0;
+  margin-bottom: rem-to-px($line-height-base);
+}
+
+h1, .h1 {
+  @include font-size($font-size-h1)
+}
+
+h2, .h2 {
+  @include font-size($font-size-h2)
+}
+
+h3, .h3 {
+  @include font-size($font-size-h3)
+}
+
+h4, .h4 {
+  @include font-size($font-size-h4)
+}
+
+h5, .h5 {
+  @include font-size($font-size-h5);
+}
+
+h6, .h6 {
+  @include font-size($font-size-h6);
+}
