@@ -63,6 +63,7 @@ textarea, label {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
   border: none;
@@ -1040,8 +1041,55 @@ strong {
   }
 }
 
-.text-left {
-  text-align: left;
+body {
+  font-family: 'PT Sans', 'Lucida Grande', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4666666667;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+strong,
+b {
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+p {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+h1, .h1 {
+  font-size: 3rem;
+  line-height: 1.4666666667;
+}
+
+h2, .h2 {
+  font-size: 2.7rem;
+  line-height: 1.6296296296;
+}
+
+h3, .h3 {
+  font-size: 2.4rem;
+  line-height: 1.8333333333;
+}
+
+h4, .h4 {
+  font-size: 2.1rem;
+  line-height: 1.0476190476;
+}
+
+h5, .h5 {
+  font-size: 1.8rem;
+  line-height: 1.2222222222;
+}
+
+h6, .h6 {
+  font-size: 1.5rem;
+  line-height: 1.4666666667;
 }
 
 .text-center {
@@ -1050,4 +1098,23 @@ strong {
 
 .text-right {
   text-align: right;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+ul.inline li {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c-white {
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
 }
