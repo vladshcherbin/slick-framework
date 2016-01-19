@@ -1,13 +1,36 @@
+// Text alignment
 .text {
-  &-left {
-    text-align: left;
-  }
-
   &-center {
     text-align: center;
   }
 
   &-right {
     text-align: right;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+}
+
+// Lists
+ul {
+  &.inline {
+    li {
+      display: inline-flex;
+    }
+  }
+}
+
+// Common colors
+.c {
+  &-white {
+    color: white;
+  }
+}
+
+.bg {
+  &-white {
+    background-color: white;
   }
 }
