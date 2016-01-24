@@ -1,6 +1,8 @@
 // Grid
 @import "normalize";
+@import "variables";
 @import "mixins";
+@import "grid/grid-mixins";
 @import "grid/grid";
 @import "typeface";
 @import "utilities";

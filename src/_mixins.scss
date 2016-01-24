@@ -1,5 +1,3 @@
-@import "variables";
-
 // Generate Font and Line Height
 @mixin font-size($value) {
   $line-height: $line-height-base / $value;
