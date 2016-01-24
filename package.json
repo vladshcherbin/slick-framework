@@ -1,6 +1,6 @@
 {
   "name": "slick-framework",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Yeah, I know. Yet another CSS framework",
   "main": "dist/framework.min.css",
   "dependencies": {},
