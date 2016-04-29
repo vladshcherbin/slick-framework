@@ -1,19 +1,22 @@
 {
   "name": "slick-framework",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Yeah, I know. Yet another CSS framework",
   "main": "dist/framework.min.css",
-  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.1",
-    "gulp-size": "^2.0.0"
+    "gulp-size": "^2.0.0",
+    "sass-lint": "^1.7.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "sass-lint 'src/**/*.scss' -v -i src/grid/**/*.scss",
+    "compile": "gulp compile",
+    "minify": "gulp minify",
+    "prepublish": "npm run lint && npm run compile && npm run minify"
   },
   "repository": {
     "type": "git",
