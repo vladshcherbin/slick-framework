@@ -40,7 +40,7 @@
   }
 }
 
-@include make-grid();
+@include make-grid;
 
 @include loop-columns('xs');
 @include hidden('xs-up');

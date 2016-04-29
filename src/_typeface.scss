@@ -1,8 +1,9 @@
 body {
-  font-family: 'PT Sans', 'Lucida Grande', 'Helvetica Neue', Arial, sans-serif;
+  font-family: $font-typeface;
   font-size: $font-size-base + rem;
   font-weight: $font-weight-normal;
   line-height: $line-height-base / $font-size-base;
+  color: $font-color;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -14,25 +15,28 @@ b {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
-p {
-  margin-top: 0;
+p,
+ul,
+ol,
+table,
+button {
   margin-bottom: rem-to-px($line-height-base);
 }
 
 h1, .h1 {
-  @include font-size($font-size-h1)
+  @include font-size($font-size-h1);
 }
 
 h2, .h2 {
-  @include font-size($font-size-h2)
+  @include font-size($font-size-h2);
 }
 
 h3, .h3 {
-  @include font-size($font-size-h3)
+  @include font-size($font-size-h3);
 }
 
 h4, .h4 {
-  @include font-size($font-size-h4)
+  @include font-size($font-size-h4);
 }
 
 h5, .h5 {
@@ -41,4 +45,16 @@ h5, .h5 {
 
 h6, .h6 {
   @include font-size($font-size-h6);
+}
+
+a {
+  color: $link-color;
+
+  &:hover, &:focus {
+    color: $link-color-focus;
+  }
+
+  &:visited {
+    color: $link-color-visited;
+  }
 }

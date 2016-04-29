@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -26,8 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
 }
 
-main,
-li {
+main {
   display: block;
 }
 
@@ -43,12 +41,12 @@ a {
 }
 
 button {
-  overflow: visible;
-  border: none;
   font: inherit;
   letter-spacing: inherit;
   background: none;
   padding: 0;
+  border: none;
+  overflow: visible;
   cursor: pointer;
 }
 
@@ -63,21 +61,17 @@ textarea, label {
 img {
   display: block;
   width: 100%;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
   border: none;
 }
 
 table {
   width: 100%;
   max-width: 100%;
+  text-align: left;
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-i {
-  display: inline-flex;
-  align-self: center;
 }
 
 strong {

@@ -11,6 +11,10 @@
   &-capitalize {
     text-transform: capitalize;
   }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
 }
 
 // Lists
@@ -18,19 +22,51 @@ ul {
   &.inline {
     li {
       display: inline-flex;
+
+      &:not(:last-of-type) {
+        margin-right: $list-inline-margin-right;
+      }
     }
+  }
+
+  &.unstyled {
+    list-style-type: none;
   }
 }
 
 // Common colors
 .c {
   &-white {
-    color: white;
+    color: $common-white-color;
+  }
+
+  &-green {
+    color: $common-green-color;
+  }
+
+  &-yellow {
+    color: $common-yellow-color;
+  }
+
+  &-red {
+    color: $common-red-color;
   }
 }
 
 .bg {
   &-white {
-    background-color: white;
+    background-color: $common-white-color;
+  }
+
+  &-green {
+    background-color: $common-green-color;
+  }
+
+  &-yellow {
+    background-color: $common-yellow-color;
+  }
+
+  &-red {
+    background-color: $common-red-color;
   }
 }
