@@ -1119,6 +1119,14 @@ ol ol {
   padding-left: 15px;
 }
 
+svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  -webkit-transition: fill .25s;
+  transition: fill .25s;
+}
+
 .text-center {
   text-align: center;
 }
