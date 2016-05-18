@@ -1107,18 +1107,18 @@ ul {
   list-style-type: circle;
 }
 
-ul ul {
-  margin-bottom: 0;
+ul > li > ul {
   padding-left: 15px;
+  margin-bottom: 0;
 }
 
 ol {
   list-style-type: decimal;
 }
 
-ol ol {
-  margin-bottom: 0;
+ol > li > ol {
   padding-left: 15px;
+  margin-bottom: 0;
 }
 
 svg {

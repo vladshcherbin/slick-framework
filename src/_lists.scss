@@ -5,17 +5,17 @@ ul, ol {
 ul {
   list-style-type: circle;
 
-  ul {
-    margin-bottom: 0;
+  > li > ul {
     padding-left: $nested-list-padding-left;
+    margin-bottom: 0;
   }
 }
 
 ol {
   list-style-type: decimal;
 
-  ol {
-    margin-bottom: 0;
+  > li > ol {
     padding-left: $nested-list-padding-left;
+    margin-bottom: 0;
   }
 }
