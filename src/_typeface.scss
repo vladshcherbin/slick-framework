@@ -48,6 +48,11 @@ h6, .h6 {
   @include font-size($font-size-h6);
 }
 
+a, button {
+  transition: color, background-color, border-color;
+  transition-duration: $transition-duration;
+}
+
 a {
   color: $link-color;
 

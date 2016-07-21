@@ -1,6 +1,6 @@
 svg {
   width: 20px;
   height: 20px;
+  transition: fill $transition-duration;
   fill: currentColor;
-  transition: fill .25s;
 }
