@@ -4,16 +4,17 @@
   "description": "Yeah, I know. Yet another CSS framework",
   "main": "dist/framework.min.css",
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.1",
-    "gulp-size": "^2.0.0",
-    "sass-lint": "^1.7.0"
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0",
+    "sass-lint": "^1.8.2"
   },
   "scripts": {
     "lint": "sass-lint 'src/**/*.scss' -v -i src/grid/**/*.scss",
+    "dev": "gulp watch",
     "compile": "gulp compile",
     "minify": "gulp minify",
     "prepublish": "npm run lint && npm run compile && npm run minify"
