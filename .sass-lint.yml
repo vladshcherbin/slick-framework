@@ -62,19 +62,7 @@ rules:
   indentation: 1
   leading-zero: 1
   nesting-depth: [1, { 'max-depth': 3 }]
-  property-sort-order: [1, {
-    'order': [
-      'position', 'top', 'right', 'bottom', 'left',
-      'display', 'align-items',
-      'width', 'height', 'max-width', 'max-height',
-      'font', 'font-family', 'font-size', 'font-weight',
-      'line-height', 'text-align', 'text-transform', 'letter-spacing',
-      'color', 'background', 'background-color',
-      'padding', 'margin',
-      'border', 'border-radius',
-      'overflow', 'z-index', 'cursor'
-    ]
-  }]
+  property-sort-order: [1, { 'order': 'smacss' }]
   quotes: 1
   shorthand-values: [1, { 'allowed-shorthands': [1, 2] }]
   url-quotes: 1

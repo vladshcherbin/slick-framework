@@ -1,9 +1,9 @@
 body {
+  color: $font-color;
   font-family: $font-typeface;
   font-size: $font-size-base + rem;
   font-weight: $font-weight-normal;
   line-height: $line-height-base / $font-size-base;
-  color: $font-color;
 }
 
 h1, h2, h3, h4, h5, h6,
