@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-size: 1.5rem;
   line-height: 1.5;
+  text-size-adjust: 100%;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -17,7 +18,8 @@ p,
 blockquote,
 ul,
 ol,
-pre {
+pre,
+button {
   margin: 0;
   padding: 0;
 }
@@ -39,7 +41,6 @@ a {
 }
 
 button {
-  padding: 0;
   border: none;
   background: none;
   font: inherit;
@@ -54,6 +55,10 @@ input, textarea {
 
 textarea, label {
   vertical-align: middle;
+}
+
+textarea {
+  resize: none;
 }
 
 img {
@@ -74,6 +79,15 @@ table {
 
 strong {
   font-weight: bold;
+}
+
+a,
+button,
+input,
+label,
+select,
+textarea {
+  touch-action: manipulation;
 }
 
 :focus {
