@@ -1,6 +1,6 @@
 {
   "name": "slick-framework",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Yeah, I know. Yet another CSS framework",
   "main": "dist/framework.min.css",
   "files": [
@@ -41,8 +41,5 @@
   "bugs": {
     "url": "https://github.com/VladShcherbin/slick-framework/issues"
   },
-  "homepage": "https://github.com/VladShcherbin/slick-framework#readme",
-  "dependencies": {
-    "just-the-grid": "^1.0.1"
-  }
+  "homepage": "https://github.com/VladShcherbin/slick-framework#readme"
 }
