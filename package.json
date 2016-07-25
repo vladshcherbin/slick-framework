@@ -13,7 +13,7 @@
     "sass-lint": "^1.8.2"
   },
   "scripts": {
-    "lint": "sass-lint 'src/**/*.scss' -v -i src/grid/**/*.scss",
+    "lint": "sass-lint 'src/**/*.scss' -v",
     "dev": "gulp watch",
     "compile": "gulp compile",
     "minify": "gulp minify",
@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/VladShcherbin/slick-framework/issues"
   },
-  "homepage": "https://github.com/VladShcherbin/slick-framework#readme"
+  "homepage": "https://github.com/VladShcherbin/slick-framework#readme",
+  "dependencies": {
+    "just-the-grid": "^1.0.1"
+  }
 }

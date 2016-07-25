@@ -4,8 +4,7 @@
 @import 'variables';
 @import 'mixins';
 // Grid
-@import 'grid/grid-mixins';
-@import 'grid/grid';
+@import '../node_modules/just-the-grid/scss/just-the-grid';
 // Project
 @import 'typeface';
 @import 'lists';
