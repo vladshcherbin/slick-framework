@@ -1,8 +1,14 @@
 {
   "name": "slick-framework",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Yeah, I know. Yet another CSS framework",
   "main": "dist/framework.min.css",
+  "files": [
+    "*.md",
+    "*.html",
+    "dist",
+    "src"
+  ],
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
