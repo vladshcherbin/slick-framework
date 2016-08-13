@@ -1,6 +1,6 @@
 {
   "name": "slick-framework",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Yeah, I know. Yet another CSS framework",
   "main": "dist/framework.min.css",
   "files": [
@@ -33,8 +33,7 @@
     "slick",
     "minimal",
     "css",
-    "framework",
-    "grid"
+    "framework"
   ],
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "license": "MIT",
